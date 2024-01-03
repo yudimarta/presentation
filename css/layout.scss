@@ -67,3 +67,129 @@
 .reveal .justify-start { justify-content: flex-start; }
 .reveal .justify-center { justify-content: center; }
 .reveal .justify-end { justify-content: flex-end; }
+
+.title-wrapper {
+    display: flex;
+	align-items: center;
+	height: 100vh;
+
+    .profile {
+       background-color: #FFF;
+	   width: 200px;
+	   height: 200px;
+	   border-radius: 100px;
+    }
+
+	.profile-info {
+		text-align: left;
+		margin-left: 32px;
+
+		.name {
+			font-size: 64px;
+			line-height: 72px;
+		}
+
+		.job {
+			font-size: 24px;
+			line-height: 12px;
+		}
+	}
+	
+}
+
+.profile-wrapper {
+    display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+    .profile {
+       background-color: #FFFFFF;
+	   width: 150px;
+	   height: 150px;
+	   border-radius: 75px;
+    }
+	
+}
+
+.timeline {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	width: auto;
+	min-width: 600px;
+  }
+  
+  .timeline::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	background-color: #FFFFFF !important;
+	top: 0;
+	bottom: 0;
+	left: 50% !important;
+	margin-left: -1px;
+  }
+  
+  .timeline-item {
+	position: relative;
+	margin-bottom: 25px;
+  }
+  
+  .timeline-item::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #FFFFFF !important;
+	border-radius: 50%;
+	top: 25px !important;
+	bottom: 0px !important;
+	left: 50% !important;
+	margin-left: -10px;
+  }
+
+  
+  .timeline-content {
+	// position: relative;
+	// text-align: left !important;
+	// font-size: 16px !important;
+	width: 100% !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px auto;
+  }
+  
+  .timeline-date {
+	font-weight: bold;
+	line-height: 0px !important;
+	width: 50%;
+	// margin: 0px !important;
+	// margin-top: 12px;
+  }
+  
+  .timeline-description {
+	width: 50%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+
+	img {
+		height: 50px !important;
+	}
+	
+	.timeline-company {
+		font-size: 24px;
+	}
+
+	.timeline-job {
+		font-size: 20px !important;
+		line-height: 0px !important;
+		margin: 8px;
+	}
+  }
